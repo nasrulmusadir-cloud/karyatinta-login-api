@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "Karya Tinta API Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\": \"testuser@example.com\", \"password\": \"123456\"}"
+        },
+        "url": {
+          "raw": "https://karyatinta-api-test.onrender.com/api/auth/login",
+          "protocol": "https",
+          "host": [
+            "karyatinta-api-test",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Products",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://karyatinta-api-test.onrender.com/api/products",
+          "protocol": "https",
+          "host": [
+            "karyatinta-api-test",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "products"
+          ]
+        }
+      }
+    }
+  ]
+}
